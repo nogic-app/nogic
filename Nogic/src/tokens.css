@@ -1,0 +1,65 @@
+:root {
+  --bg: #fafaf7;
+  --bg-elevated: #ffffff;
+  --bg-muted: #f2f1ec;
+  --text-primary: #1f1f1d;
+  --text-secondary: #6b6b66;
+  --text-tertiary: #9a9a93;
+  --border: #e5e3dd;
+  --border-strong: #c9c7bf;
+  --accent: #4a6b4e;
+  --accent-subtle: #e8ede7;
+  --warning: #b8860b;
+  --danger: #a84743;
+  --focus: #4a6b4e40;
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--text-tertiary) 0%,
+    var(--text-primary) 50%,
+    var(--text-tertiary) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 2.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer {
+    animation: none;
+  }
+}
+
+/*
+ * Dark-mode values for the frozen DESIGN.md tokens. Same roles, inverted
+ * surfaces; the muted green is lifted so links and active controls stay
+ * readable on a dark page. Applied by SettingsContext via <html class="dark">.
+ */
+.dark {
+  color-scheme: dark;
+  --bg: #161714;
+  --bg-elevated: #1d1f1b;
+  --bg-muted: #232521;
+  --text-primary: #ecebe6;
+  --text-secondary: #a6a59d;
+  --text-tertiary: #76766e;
+  --border: #2f312c;
+  --border-strong: #474a42;
+  --accent: #74a07d;
+  --accent-subtle: #24322a;
+  --warning: #d4a63a;
+  --danger: #d37772;
+  --focus: #74a07d40;
+}

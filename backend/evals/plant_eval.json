@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Find a drought-tolerant plant for a sunny slope.",
+    "expect_refusal": false,
+    "expected_plants": [
+      "Rosmarinus officinalis",
+      "Lavandula stoechas",
+      "Pistacia lentiscus",
+      "Olea europaea",
+      "Ceratonia siliqua"
+    ],
+    "note": "All five table rows are low-water full-sun species; Rosmarinus officinalis is the first candidate."
+  },
+  {
+    "question": "What plant is good for lavender?",
+    "expect_refusal": false,
+    "expected_plants": ["Lavandula stoechas"]
+  },
+  {
+    "question": "I need a tree that produces carob.",
+    "expect_refusal": false,
+    "expected_plants": ["Ceratonia siliqua"]
+  },
+  {
+    "question": "What about a banana tree?",
+    "expect_refusal": true
+  },
+  {
+    "question": "Tell me about the rose flower.",
+    "expect_refusal": true
+  }
+]

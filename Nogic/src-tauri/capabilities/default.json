@@ -1,0 +1,32 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-minimize",
+    "core:window:allow-toggle-maximize",
+    "core:window:allow-close",
+    "core:window:allow-start-dragging",
+    "dialog:default",
+    "opener:default",
+    "clipboard-manager:allow-write-text",
+    "autostart:default",
+    {
+      "identifier": "opener:allow-open-path",
+      "allow": [
+        { "path": "$TEMP/**" },
+        { "path": "$APPDATA" },
+        { "path": "$APPDATA/memory" },
+        { "path": "$APPDATA/memory/**" },
+        { "path": "$APPDATA/logs" },
+        { "path": "$APPDATA/logs/**" },
+        { "path": "$DOCUMENTS/Nogic Exports/**" },
+        { "path": "$DOCUMENT/Nogic Exports/**" },
+        { "path": "$HOME/Documents/Nogic Exports/**" },
+        { "path": "$RESOURCE/docs/**" }
+      ]
+    }
+  ]
+}

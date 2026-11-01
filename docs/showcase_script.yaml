@@ -1,0 +1,45 @@
+url: http://localhost:1420
+viewport: { width: 1200, height: 800 }
+size: youtube
+fps: 30
+theme: dark
+background: charcoal
+zoom: subtle
+speed: 1
+deviceScaleFactor: 2
+
+steps:
+  # 1. Welcome screen
+  - caption:
+      text: "Nogic — a local-first AI colleague for landscape architecture"
+      duration: 2600
+  - wait: ".welcome-screen"
+
+  - caption:
+      text: "Everything runs on your machine"
+      duration: 1800
+
+  # 2. Plant question with verified cards
+  - caption:
+      text: "Ask for plants. Get a verified table, not a guess."
+      duration: 2000
+  - click: "#chat-composer"
+  - type:
+      selector: "#chat-composer"
+      text: "Find native plants for a dry slope."
+      clear: true
+  - press: "Enter"
+  - pause: 15000  # Wait for the LLM to answer
+
+  # 3. Settings → Models: hardware and capability pills
+  - caption:
+      text: "Your hardware decides the model. Nogic tells you what fits."
+      duration: 2000
+  - click: '[aria-label="Settings"]'
+  - pause: 1000 # Wait for Settings modal to open
+  - click: "text=Models"
+  - pause: 4000 # Wait for Models tab to render and pills to show
+
+  - caption:
+      text: "Verified plants. Honest answers. Nothing leaves your machine."
+      duration: 2800

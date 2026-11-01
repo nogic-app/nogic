@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the required setback distance for a building along a public road?",
+    "law": "12.90",
+    "article": "46"
+  },
+  {
+    "question": "What documents are required to apply for a lotissement authorization?",
+    "law": "25.90",
+    "article": "4"
+  },
+  {
+    "question": "Which types of projects must undergo an environmental impact study?",
+    "law": "12.03",
+    "article": ["1", "2"]
+  },
+  {
+    "question": "Can I discharge untreated wastewater into a river?",
+    "law": ["11.03", "36.15"],
+    "article": ["27", "43"],
+    "keywords": [
+      "prohibited",
+      "forbidden",
+      "interdit",
+      "authorization",
+      "authorisation",
+      "autorisation",
+      "requires",
+      "required"
+    ]
+  },
+  {
+    "question": "What is the penalty for building a house without a permit?",
+    "law": "12.90",
+    "article": ["71", "66"]
+  },
+  {
+    "question": "What is the legal requirement for installing solar panels on a roof?",
+    "law": null,
+    "article": null
+  }
+]

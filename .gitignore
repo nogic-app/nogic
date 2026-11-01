@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+Nogic/node_modules/
+
+# Build output
+dist/
+Nogic/dist/
+build/
+backend/build/
+backend/dist/
+src-tauri/target/
+Nogic/src-tauri/target/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local databases and user data
+nogic.db
+nogic.db-*
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Locally uploaded / bundled law PDFs (licensing and size)
+backend/data/laws/
+backend/data/laws_backup/
+
+# Logs and editor files
+*.log
+logs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.local
+
+# Archived artifacts (moved out of root during cleanup)
+archive/
+
+# Video and temporary experiment artifacts
+*.mp4
+*.mov
+
+# Keep the verified plant table in version control.
+!backend/data/plants.json
+
+# Internal development files (not for public repo)
+.rules
+STATE.md
+TASKS.md
+TASKS_V1.1.md
+DECISIONS.md
+PROJECT.md
+DESIGN.md
+progress.py
+HANDOVER_v1.0.0.md
+AUDIT_REPORT.md
+HOTFIX_v1.0.1.md
+docs/planning/
+
+# IDE and Editor folders
+.vscode/
+.idea/
+
+# Tauri mobile artifacts (Nogic is desktop-only)
+src-tauri/gen/android/
+src-tauri/gen/apple/
+src-tauri/icons/android/
+src-tauri/icons/ios/
+
+# Local backend tests (kept local for development, not published)
+backend/tests/
+
+text
