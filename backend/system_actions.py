@@ -9,7 +9,7 @@ import zipfile
 from pathlib import Path
 
 TESSERACT_ZIP_URL = (
-    "https://github.com/nogic-app/nogic/releases/download/"
+    "https://github.com/nogic-app/Nogic/releases/download/"
     "deps-v1/tesseract-portable-win64.zip"
 )
 TESSERACT_ZIP_SHA256 = "CE2CF87E118EA06778D03FE5C969FE08648834FB78538C7DCD6785275B2F72FA"
